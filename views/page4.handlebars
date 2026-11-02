@@ -1,0 +1,11 @@
+<h1>All Dogs</h1>
+
+{{#if dogs.length}}
+<ul>
+    {{#each dogs}}
+    <li>Name: {{this.name}} | Breed: {{this.breed}} | Age: {{this.age}}</li>
+    {{/each}}
+</ul>
+{{else}}
+<p>No dogs found.</p>
+{{/if}}

@@ -10,6 +10,29 @@
 <body>
   <h1>Welcome to page 3</h1>
   
+  <h2>Create a Dog</h2>
+  <form id="createDogForm" action="/createDog" method="POST">
+    <label for="name">Name: </label>
+    <input id="name" type="text" name="name" required />
+  
+    <label for="breed">Breed: </label>
+    <input id="breed" type="text" name="breed" required />
+  
+    <label for="age">Age: </label>
+    <input id="age" type="number" name="age" min="0" required />
+  
+    <input type="submit" value="Create Dog" />
+  </form>
+  
+  <hr />
+  
+  <h2>Increase Dog Age</h2>
+  <form id="updateDogForm" action="/updateDog" method="POST">
+    <label for="searchName">Dog Name: </label>
+    <input id="searchName" type="text" name="name" required />
+  
+    <input type="submit" value="Increase Age" />
+  </form>
   <!-- links or URLs are always GET resources as they are getting (retrieving) a resource -->
   <a href="/">Home</a>
   <a href="/page1">Page 1</a>
